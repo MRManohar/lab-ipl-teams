@@ -1,11 +1,22 @@
-  
-import { Component } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { TeamsComponent } from './teams/teams.component';
+import { FooterComponent } from './footer/footer.component';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    TeamsComponent,
+    FooterComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
-export class AppComponent {
-  pageName = 'IPL Batches';
-}
+export class AppModule { }

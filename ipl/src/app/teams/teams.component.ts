@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Player } from '../player';
+import { Player } from './../player';
 import { Players } from '../players';
 
 @Component({
@@ -9,6 +9,7 @@ import { Players } from '../players';
 })
 export class TeamsComponent implements OnInit {
 
+ 
   Players: Player[];
   newPlayer: Player;
 
@@ -23,5 +24,4 @@ export class TeamsComponent implements OnInit {
     this.Players.unshift(newPlayer);
     alert('New Player Added');
   }
-
 }
